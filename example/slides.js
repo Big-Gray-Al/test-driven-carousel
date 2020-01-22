@@ -51,6 +51,8 @@ export default [
     imgUrl:
       'https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?w=1080' +
       '&ixid=eyJhcHBfaWQiOjIzODE4fQ&s=54a272d03f5c06c416e8899f113dff06',
+  },
+  {
     description: 'Rio de Janeiro',
     attribution: getAttribution({
       name: 'Agustín Diaz',

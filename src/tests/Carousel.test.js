@@ -13,16 +13,19 @@ describe('Carousel', () => {
     {
       imgUrl: 'https://example.com/slide1.png',
       description: 'Slide 1',
+      imgHeight: 500,
       attribution: 'Uno Pizzeria',
     },
     {
       imgUrl: 'https://example.com/slide2.png',
       description: 'Slide 2',
+      imgHeight: 500,
       attribution: 'Dos Equis',
     },
     {
       imgUrl: 'https://example.com/slide3.png',
       description: 'Slide 3',
+      imgHeight: 500,
       attribution: 'Three Amigos',
     },
   ];
