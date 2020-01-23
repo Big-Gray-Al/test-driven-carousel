@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default (Component, indexPropName) =>
   class ComponentWithIndex extends React.PureComponent {
