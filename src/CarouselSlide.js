@@ -1,18 +1,16 @@
 // src/CarouselSlide.js
-
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Img = styled.img`
   object-fit: cover;
   width: 100%;
-  height: height: ${props =>
+  height: ${props =>
     typeof props.imgHeight === 'number'
       ? `${props.imgHeight}px`
       : props.imgHeight};
 `;
-
 const CarouselSlide = ({
   imgUrl,
   imgHeight,

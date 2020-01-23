@@ -1,4 +1,4 @@
-// src/CarouselButton.js
+// src/tests/CarouselSlide.test.js
 
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -10,7 +10,7 @@ describe('CarouselSlide', () => {
   beforeEach(() => {
     wrapper = shallow(
       <CarouselSlide
-        imgUrl="https://example.com/image.png"
+        imgUrl="https://example.com/default.jpg"
         description="Default test image"
       />
     );
@@ -25,7 +25,7 @@ describe('CarouselSlide', () => {
     expect(wrapper.childAt(1).type()).toBe('figcaption');
   });
   it('passes `imgUrl` through to the <img>', () => {
-    const imgUrl = 'https://example.com/image.png';
+    const imgUrl = 'https://example.com/default.jpg';
     wrapper.setProps({ imgUrl });
     const img = wrapper.find('img');
     expect(img.prop('src')).toBe(imgUrl);
