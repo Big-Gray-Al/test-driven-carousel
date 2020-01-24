@@ -72,7 +72,7 @@ export default (Component, indexPropName) => {
         [`${indexPropName}Decrement`]: this.handleDecrement,
         [`${indexPropName}Increment`]: this.handleIncrement,
       };
-      return <Component {...this.props} {...indexProps} />;
+      return <Component {...rest} {...indexProps} />;
     }
   };
 };
